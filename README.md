@@ -1,88 +1,79 @@
-# VBA-challenge
-Module 2 challenge
+# VBA Homework: The VBA of Wall Street
 
-Background
-You are well on your way to becoming a programmer and Excel expert! In this homework assignment, you will use VBA scripting to analyze generated stock market data.
+## Background
 
-Before You Begin
-Create a new repository for this project called VBA-challenge. Do not add this assignment to an existing repository.
+You are well on your way to becoming a programmer and Excel master! In this homework assignment, you will use VBA scripting to analyze generated stock market data. Depending on your comfort level with VBA, you may choose to challenge yourself with a few of the challenge tasks.
 
-Inside the new repository that you just created, add any VBA files that you use for this assignment. These will be the main scripts to run for each analysis.
+### Before You Begin
 
-Files
-Download the following files to help you get started:
+1. Create a new repository for this project called `VBA-challenge`. **Do not add this homework to an existing repository**.
 
-Module 2 Challenge filesLinks to an external site.
+2. Inside the new repository that you just created, add any VBA files that you use for this assignment. These will be the main scripts to run for each analysis.
 
-Instructions
+### Files
+
+* [Test Data](Resources/alphabetical_testing.xlsx) - Use this while developing your scripts.
+
+* [Stock Data](Resources/Multiple_year_stock_data.xlsx) - Run your scripts on this data to generate the final homework report.
+
+### Stock Market Analyst
+
+![alt=""](Images/stockmarket.jpg)
+
+## Instructions
+
 Create a script that loops through all the stocks for one year and outputs the following information:
 
-The ticker symbol
+  * The ticker symbol.
 
-Yearly change from the opening price at the beginning of a given year to the closing price at the end of that year.
+  * Yearly change from opening price at the beginning of a given year to the closing price at the end of that year.
 
-The percentage change from the opening price at the beginning of a given year to the closing price at the end of that year.
+  * The percent change from opening price at the beginning of a given year to the closing price at the end of that year.
 
-The total stock volume of the stock. The result should match the following image:
+  * The total stock volume of the stock.
 
-Moderate solution
+**Note:** Make sure to use conditional formatting that will highlight positive change in green and negative change in red.
+
+The result should match the following image:
+
+![moderate_solution](Images/moderate_solution.png)
+
+## Bonus
+
 Add functionality to your script to return the stock with the "Greatest % increase", "Greatest % decrease", and "Greatest total volume". The solution should match the following image:
 
-Hard solution
-Make the appropriate adjustments to your VBA script to enable it to run on every worksheet (that is, every year) at once.
+![hard_solution](Images/hard_solution.png)
 
-NOTE
-Make sure to use conditional formatting that will highlight positive change in green and negative change in red.
+Make the appropriate adjustments to your VBA script to allow it to run on every worksheet (that is, every year) just by running the VBA script once.
 
-Other Considerations
-Use the sheet alphabetical_testing.xlsx while developing your code. This dataset is smaller and will allow you to test faster. Your code should run on this file in under 3 to 5 minutes.
+## Other Considerations
 
-Make sure that the script acts the same on every sheet. The joy of VBA is that it takes the tediousness out of repetitive tasks with the click of a button.
+* Use the sheet `alphabetical_testing.xlsx` while developing your code. This data set is smaller and will allow you to test faster. Your code should run on this file in less than 3 to 5 minutes.
 
-Requirements
-Retrieval of Data (20 points)
-The script loops through one year of stock data and reads/ stores all of the following values from each row:
+* Make sure that the script acts the same on every sheet. The joy of VBA is that it takes the tediousness out of repetitive tasks with one click of a button.
 
-ticker symbol (5 points)
+* Some assignments, like this one, contain a bonus. It is possible to achieve proficiency for this assignment without completing the bonus. The bonus is an opportunity to further develop your skills and be rewarded extra points for doing so.
 
-volume of stock (5 points)
+## Submission
 
-open price (5 points)
+To submit, please upload the following to GitHub:
 
-close price (5 points)
+  * A screen shot for each year of your results on the multi-year stock data.
 
-Column Creation (10 points)
-On the same worksheet as the raw data, or on a new worksheet all columns were correctly created for:
+  * VBA scripts as separate files.
 
-ticker symbol (2.5 points)
+Be sure to commit regularly to your repository and that it contains a README.md file.
 
-total stock volume (2.5 points)
+After saving your work, create a shareable link and submit the link to <https://bootcampspot-v2.com/>.
 
-yearly change ($) (2.5 points)
+## Rubric
 
-percent change (2.5 points)
+[Unit 2 Rubric - VBA Homework - The VBA of Wall Street](https://docs.google.com/document/d/1OjDM3nyioVQ6nJkqeYlUK7SxQ3WZQvvV3T9MHCbnoWk/edit?usp=sharing)
 
-Conditional Formatting (20 points)
-Conditional formatting is applied correctly and appropriately to the yearly change column (10 points)
+## References
 
-Conditional formatting is applied correctly and appropriately to the percent change column (10 points)
+* Dataset generated by Trilogy Education Services, LLC.
 
-Calculated Values (15 points)
-All three of the following values are calculated correctly and displayed in the output:
+- - -
 
-Greatest % Increase (5 points)
-
-Greatest % Decrease (5 points)
-
-Greatest Total Volume (5 points)
-
-Looping Across Worksheet (20 points)
-The VBA script can run on all sheets successfully.
-GitHub/GitLab Submission (15 points)
-All three of the following are uploaded to GitHub/GitLab:
-
-Screenshots of the results (5 points)
-
-Separate VBA script files (5 points)
-
-README file (5 points)
+© 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
